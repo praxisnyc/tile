@@ -1,8 +1,8 @@
 {
-  "name": "tiles",
+  "name": "tile",
   "description": "configurable SVG patterns",
   "main": [
-    "tiles.sass"
+    "tile.sass"
   ],
   "keywords": [
     "design",
