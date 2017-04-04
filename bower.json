@@ -15,7 +15,7 @@
       "email": "info@nicholasfrota.com",
     "homepage": "http://nonlinear.nyc" }
   ],
-  "homepage": "http://nonlinear.nyc/tiles",
+  "homepage": "http://nonlinear.nyc/tile",
   "license": "MIT",
   "ignore": [
     "*.html",

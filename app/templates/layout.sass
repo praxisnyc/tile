@@ -1,0 +1,20 @@
+// (\_/)   nonlinear tile
+// (`ㅅ`)づ extended from PatternBolt https://github.com/buseca/patternbolt
+// (")(")  more at nonlinear.nyc/tile
+
+=tile($tile, $size: 200px, $background-color: #000, $foreground-color: #fff, $foreground-alpha: 1, $background-alpha: $foreground-alpha, $mask: 'none')
+
+  @if unitless($size)
+    @warn "Assuming PatternBolt background-size `#{$size}` to be in pixels."
+    $size: ($size + 0px)
+
+  $background-image: null
+
+  {% block content %}
+  {% endblock %}
+
+  position: relative
+  z-index: 1
+  background-size: $size
+  background-color: none
+  background-image: $background-image
