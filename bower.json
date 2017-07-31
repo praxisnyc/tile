@@ -26,6 +26,8 @@
     "gulp/",
     "Packages",
     "tiles/"
+    "*.html",
+    "*.js"
   ],
   "private": false
 }
