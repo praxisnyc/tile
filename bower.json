@@ -2,7 +2,8 @@
   "name": "tile",
   "description": "configurable SVG patterns",
   "main": [
-    "tile.sass"
+    "tile.sass",
+    "tile.scss"
   ],
   "keywords": [
     "design",
@@ -18,9 +19,9 @@
   "homepage": "http://nonlinear.nyc/tile",
   "license": "MIT",
   "ignore": [
-    "*.html",
-    "*.css",
-    "*.md"
+    "**/*.*",
+    "!*.sass",
+    "!*.scss"
   ],
   "private": false
 }
