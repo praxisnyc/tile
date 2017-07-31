@@ -19,9 +19,13 @@
   "homepage": "http://nonlinear.nyc/tile",
   "license": "MIT",
   "ignore": [
-    "**/*.*",
-    "!*.sass",
-    "!*.scss"
+    "app/",
+    "*.json",
+    "css/",
+    "fonts/",
+    "gulp/",
+    "Packages",
+    "tiles/"
   ],
   "private": false
 }
