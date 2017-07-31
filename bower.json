@@ -20,11 +20,12 @@
   "license": "MIT",
   "ignore": [
     "app/",
+    "*.json",
     "css/",
     "fonts/",
     "gulp/",
     "Packages",
-    "tiles/"
+    "tiles/",
     "*.html",
     "*.js"
   ],
