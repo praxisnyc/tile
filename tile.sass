@@ -2,36 +2,70 @@
 // (`ㅅ`)づ extended from PatternBolt https://github.com/buseca/patternbolt
 // (")(")  more at nonlinear.nyc/tile
 
-@mixin tile($tile, $size: 200px, $background-color: #000, $foreground-color: #fff, $foreground-alpha: 1, $background-alpha: $foreground-alpha, $mask: "none") {
-  @if unitless($size) {
-    @warn "Assuming PatternBolt background-size `#{$size}` to be in pixels.";
+=tile($tile, $color: #000, $size: 200px, $mask: "none")
+  @if unitless($size)
+    @warn "Assuming PatternBolt background-size `#{$size}` to be in pixels."
 
-    $size: $size + 0px;
-  }
+    $size: $size + 0px
 
-  $background-image: null;
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-251 358.5 36 36"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-251 351.272)" font-family="ArialMT" font-size="12">cross-a</text><path class="st1" d="M-234.5 382h3v-4h4v-3h-4v-4h-3v4h-4v3h4v4zm-18-18h3v-4h4v-3h-4v-4h-3v4h-4v3h4v4z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-239 346.5 36 36"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-239 339.272)" font-family="ArialMT" font-size="12">cross-b</text><path class="st1" d="M-233 348.5h-4v4h-4v-4h-4v-4h4v-4h4v4h4v4zm18 18h-4v4h-4v-4h-4v-4h4v-4h4v4h4v4z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-239 346.5 36 36"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-478 685.771)" font-family="ArialMT" font-size="12">cross-c</text><path class="st1" d="M-472 696h-3v3h-6v-3h-3v-6h3v-3h6v3h3v6zm18 18h-3v3h-6v-3h-3v-6h3v-3h6v3h3v6z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-239 346.5 36 36"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-717 1032.272)" font-family="ArialMT" font-size="12">dots-a</text><path class="st1" d="M-699 1062.5c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zM-717 1044.5c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zM-717 1080.5c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zM-681 1044.5c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zM-681 1080.5c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-239 346.5 36 36"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-717 1032.272)" font-family="ArialMT" font-size="12">dots-b</text><path class="st1" d="M-699 1065.5c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zM-717 1047.5c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zM-717 1083.5c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zM-681 1047.5c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zM-681 1083.5c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-239 346.5 36 36"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-717 1032.272)" font-family="ArialMT" font-size="12">dots-c</text><path class="st1" d="M-699 1068.5c-6.1 0-11-4.9-11-11s4.9-11 11-11 11 4.9 11 11-4.9 11-11 11zM-717 1050.5c-6.1 0-11-4.9-11-11s4.9-11 11-11 11 4.9 11 11-4.9 11-11 11zM-717 1086.5c-6.1 0-11-4.9-11-11s4.9-11 11-11 11 4.9 11 11-4.9 11-11 11zM-681 1050.5c-6.1 0-11-4.9-11-11s4.9-11 11-11 11 4.9 11 11-4.9 11-11 11zM-681 1086.5c-6.1 0-11-4.9-11-11s4.9-11 11-11 11 4.9 11 11-4.9 11-11 11z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-252 359.5 10 10"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-252 352.272)" font-family="ArialMT" font-size="12">lines-a</text><path class="st1" d="M-252 359.5h10v1h-10z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-252 359.5 10 10"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-252 352.272)" font-family="ArialMT" font-size="12">lines-b</text><path class="st1" d="M-252 359.5h10v3h-10z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-252 359.5 10 10"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-252 352.272)" font-family="ArialMT" font-size="12">lines-c</text><path class="st1" d="M-252 359.5h10v5h-10z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-251 358.5 12 12"><style>.st0{fill:red}.st1{enable-background:new}</style><path class="st0" d="M-239 358.5h-.7l.7.7zM-251 369.8v.7h.7z"/><text transform="translate(-251 351.272)" font-family="ArialMT" font-size="12">lines-down-a</text><path class="st0" d="M-251 369.8v.7h.7zM-239 369.8v.7h-.7l-11.3-11.3v-.7h.7z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-251 358.5 12 12"><style>.st0{fill:red}.st1{enable-background:new}</style><path class="st0" d="M-248.9 358.5h-2.1v2.1l9.9 9.9h2.1v-2.1l-9.9-9.9zm9.9 2.1l-2.1-2.1h2.1v2.1zm-9.9 9.9h-2.1v-2.1l2.1 2.1z"/><text transform="translate(-251 351.272)" font-family="ArialMT" font-size="12">lines-down-b</text></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-251 358.5 12 12"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-251 351.272)" font-family="ArialMT" font-size="12">lines-down-c</text><path class="st1" d="M-247.5 358.5h-3.5v3.5l8.5 8.5h3.5V367l-8.5-8.5zm-3.5 12V367l3.5 3.5h-3.5zm12-8.5l-3.5-3.5h3.5v3.5z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-251 358.5 12 12"><style>.st0{fill:red}.st1{enable-background:new}</style><path class="st0" d="M-239 370.5v-.7l-.7.7zM-250.3 358.5h-.7v.7z"/><text transform="translate(-251 351.272)" font-family="ArialMT" font-size="12">lines-up-a</text><path class="st0" d="M-250.3 358.5h-.7v.7zM-250.3 370.5h-.7v-.7l11.3-11.3h.7v.7z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-251 358.5 12 12"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-251 351.272)" font-family="ArialMT" font-size="12">lines-up-b</text><path class="st1" d="M-239 360.6v-2.1h-2.1l-9.9 9.9v2.1h2.1l9.9-9.9zm-2.1 9.9l2.1-2.1v2.1h-2.1zm-9.9-9.9v-2.1h2.1l-2.1 2.1z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-251 358.5 12 12"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-251 351.272)" font-family="ArialMT" font-size="12">lines-up-c</text><path class="st1" d="M-239 362v-3.5h-3.5l-8.5 8.5v3.5h3.5l8.5-8.5zm-12-3.5h3.5l-3.5 3.5v-3.5zm8.5 12l3.5-3.5v3.5h-3.5z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-252 359.5 10 10"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-252 352.272)" font-family="ArialMT" font-size="12">lines-vert-a</text><path class="st1" d="M-252 359.5h1v10h-1z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-252 359.5 10 10"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-252 352.272)" font-family="ArialMT" font-size="12">lines-vert-b</text><path class="st1" d="M-252 359.5h3v10h-3z"/></svg>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="-252 359.5 10 10"><style>.st0{enable-background:new}.st1{fill:red}</style><text transform="translate(-252 352.272)" font-family="ArialMT" font-size="12">lines-vert-c</text><path class="st1" d="M-252 359.5h5v10h-5z"/></svg>
+  $background-image: null
 
-  position: relative;
-  z-index: 1;
-  background-size: $size;
-  background-color: none;
-  background-image: $background-image;
-}
+  @if $tile == "cross-a"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-234.5%20382h3v-4h4v-3h-4v-4h-3v4h-4v3h4v4zm-18-18h3v-4h4v-3h-4v-4h-3v4h-4v3h4v4z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "cross-b"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-233%20348.5h-4v4h-4v-4h-4v-4h4v-4h4v4h4v4zm18%2018h-4v4h-4v-4h-4v-4h4v-4h4v4h4v4z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "cross-c"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-472%20696h-3v3h-6v-3h-3v-6h3v-3h6v3h3v6zm18%2018h-3v3h-6v-3h-3v-6h3v-3h6v3h3v6z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "dots-a"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-699%201062.5c-2.8%200-5-2.2-5-5s2.2-5%205-5%205%202.2%205%205-2.2%205-5%205zM-717%201044.5c-2.8%200-5-2.2-5-5s2.2-5%205-5%205%202.2%205%205-2.2%205-5%205zM-717%201080.5c-2.8%200-5-2.2-5-5s2.2-5%205-5%205%202.2%205%205-2.2%205-5%205zM-681%201044.5c-2.8%200-5-2.2-5-5s2.2-5%205-5%205%202.2%205%205-2.2%205-5%205zM-681%201080.5c-2.8%200-5-2.2-5-5s2.2-5%205-5%205%202.2%205%205-2.2%205-5%205z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "dots-b"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-699%201065.5c-4.4%200-8-3.6-8-8s3.6-8%208-8%208%203.6%208%208-3.6%208-8%208zM-717%201047.5c-4.4%200-8-3.6-8-8s3.6-8%208-8%208%203.6%208%208-3.6%208-8%208zM-717%201083.5c-4.4%200-8-3.6-8-8s3.6-8%208-8%208%203.6%208%208-3.6%208-8%208zM-681%201047.5c-4.4%200-8-3.6-8-8s3.6-8%208-8%208%203.6%208%208-3.6%208-8%208zM-681%201083.5c-4.4%200-8-3.6-8-8s3.6-8%208-8%208%203.6%208%208-3.6%208-8%208z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "dots-c"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-699%201068.5c-6.1%200-11-4.9-11-11s4.9-11%2011-11%2011%204.9%2011%2011-4.9%2011-11%2011zM-717%201050.5c-6.1%200-11-4.9-11-11s4.9-11%2011-11%2011%204.9%2011%2011-4.9%2011-11%2011zM-717%201086.5c-6.1%200-11-4.9-11-11s4.9-11%2011-11%2011%204.9%2011%2011-4.9%2011-11%2011zM-681%201050.5c-6.1%200-11-4.9-11-11s4.9-11%2011-11%2011%204.9%2011%2011-4.9%2011-11%2011zM-681%201086.5c-6.1%200-11-4.9-11-11s4.9-11%2011-11%2011%204.9%2011%2011-4.9%2011-11%2011z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "lines-a"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-252%20359.5h10v1h-10z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "lines-b"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-252%20359.5h10v3h-10z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "lines-c"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-252%20359.5h10v5h-10z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "lines-down-a"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-490%20717h-.7l.7.7zM-502%20728.3v.7h.7z%27/%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-502%20728.3v.7h.7zM-490%20728.3v.7h-.7l-11.3-11.3v-.7h.7z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "lines-down-b"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-499.9%20717h-2.1v2.1l9.9%209.9h2.1v-2.1l-9.9-9.9zm9.9%202.1l-2.1-2.1h2.1v2.1zm-9.9%209.9h-2.1v-2.1l2.1%202.1z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "lines-down-c"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-247.5%20358.5h-3.5v3.5l8.5%208.5h3.5V367l-8.5-8.5zm-3.5%2012V367l3.5%203.5h-3.5zm12-8.5l-3.5-3.5h3.5v3.5z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "lines-up-a"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-490%20729v-.7l-.7.7zM-501.3%20717h-.7v.7z%27/%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-501.3%20717h-.7v.7zM-501.3%20729h-.7v-.7l11.3-11.3h.7v.7z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "lines-up-b"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-239%20360.6v-2.1h-2.1l-9.9%209.9v2.1h2.1l9.9-9.9zm-2.1%209.9l2.1-2.1v2.1h-2.1zm-9.9-9.9v-2.1h2.1l-2.1%202.1z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "lines-up-c"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-239%20362v-3.5h-3.5l-8.5%208.5v3.5h3.5l8.5-8.5zm-12-3.5h3.5l-3.5%203.5v-3.5zm8.5%2012l3.5-3.5v3.5h-3.5z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "lines-vert-a"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-252%20359.5h1v10h-1z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "lines-vert-b"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-252%20359.5h3v10h-3z%27/%3E%3C?/svg%3E")
+
+  @if $tile == "lines-vert-c"
+    $background-image: url("data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-252%20359.5h5v10h-5z%27/%3E%3C?/svg%3E")
+
+  position: relative
+  z-index: 1
+  background-size: $size
+  background-color: none
+  background-image: $background-image

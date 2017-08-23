@@ -1,0 +1,4 @@
+
+@if $tile == 'lines-up-c' {
+$background-image: url('data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-239%20362v-3.5h-3.5l-8.5%208.5v3.5h3.5l8.5-8.5zm-12-3.5h3.5l-3.5%203.5v-3.5zm8.5%2012l3.5-3.5v3.5h-3.5z%27/%3E%3C?/svg%3E');
+}

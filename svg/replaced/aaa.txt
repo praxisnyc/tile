@@ -2,7 +2,7 @@
 // (`ㅅ`)づ extended from PatternBolt https://github.com/buseca/patternbolt
 // (")(")  more at nonlinear.nyc/tile
 
-@mixin tile($tile, $size: 200px, $background-color: #000, $foreground-color: #fff, $foreground-alpha: 1, $background-alpha: $foreground-alpha, $mask: "none") {
+@mixin tile($tile, $color: #000, $size: 200px, $mask: "none") {
   @if unitless($size) {
     @warn "Assuming PatternBolt background-size `#{$size}` to be in pixels.";
 

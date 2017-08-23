@@ -1,0 +1,4 @@
+
+@if $tile == 'cross-c' {
+$background-image: url('data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-472%20696h-3v3h-6v-3h-3v-6h3v-3h6v3h3v6zm18%2018h-3v3h-6v-3h-3v-6h3v-3h6v3h3v6z%27/%3E%3C?/svg%3E');
+}
