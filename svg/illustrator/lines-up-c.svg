@@ -3,10 +3,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="-251 358.5 12 12" style="enable-background:new -251 358.5 12 12;" xml:space="preserve">
 <style type="text/css">
-	.st0{enable-background:new    ;}
-	.st1{fill:#FF0000;}
+	.st0{fill:#FF0000;}
 </style>
-<text transform="matrix(1 0 0 1 -251 351.2715)" style="font-family:'ArialMT'; font-size:12px;">lines-up-c</text>
-<path class="st1" d="M-239,362v-3.5h-3.5l-8.5,8.5v3.5h3.5L-239,362z M-251,358.5h3.5l-3.5,3.5V358.5z M-242.5,370.5l3.5-3.5v3.5
-	H-242.5z"/>
+<path class="st0" d="M-490,720.5V717h-3.5l-8.5,8.5v3.5h3.5L-490,720.5z M-502,717h3.5l-3.5,3.5V717z M-493.5,729l3.5-3.5v3.5
+	H-493.5z"/>
 </svg>

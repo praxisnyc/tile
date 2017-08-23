@@ -3,12 +3,10 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="-251 358.5 12 12" style="enable-background:new -251 358.5 12 12;" xml:space="preserve">
 <style type="text/css">
-	.st0{enable-background:new    ;}
-	.st1{fill:#FF0000;}
+	.st0{fill:#FF0000;}
 </style>
-<text transform="matrix(1 0 0 1 -502 709.7715)" style="font-family:'ArialMT'; font-size:12px;">lines-down-a</text>
-<polygon class="st1" points="-490,717 -490.7,717 -490,717.7 "/>
-<polygon class="st1" points="-502,728.3 -502,729 -501.3,729 "/>
-<polygon class="st1" points="-502,728.3 -502,729 -501.3,729 "/>
-<polygon class="st1" points="-490,728.3 -490,729 -490.7,729 -502,717.7 -502,717 -501.3,717 "/>
+<polygon class="st0" points="-741,1075.5 -741.7,1075.5 -741,1076.2 "/>
+<polygon class="st0" points="-753,1086.8 -753,1087.5 -752.3,1087.5 "/>
+<polygon class="st0" points="-753,1086.8 -753,1087.5 -752.3,1087.5 "/>
+<polygon class="st0" points="-741,1086.8 -741,1087.5 -741.7,1087.5 -753,1076.2 -753,1075.5 -752.3,1075.5 "/>
 </svg>

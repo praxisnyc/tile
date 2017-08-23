@@ -1,4 +1,0 @@
-
-@if $tile == 'lines-vert-a' {
-$background-image: url('data:image/svg+xml,%3Csvg%3E%3Cpath%20class%3D%27#{$color}%27%20d%3D%27M-252%20359.5h1v10h-1z%27/%3E%3C?/svg%3E');
-}

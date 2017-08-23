@@ -3,13 +3,11 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="-239 346.5 36 36" style="enable-background:new -239 346.5 36 36;" xml:space="preserve">
 <style type="text/css">
-	.st0{enable-background:new    ;}
-	.st1{fill:#FF0000;}
+	.st0{fill:#FF0000;}
 </style>
-<text transform="matrix(1 0 0 1 -717 1032.2715)" style="font-family:'ArialMT'; font-size:12px;">dots-a</text>
-<path class="st1" d="M-699,1062.5c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S-696.2,1062.5-699,1062.5z"/>
-<path class="st1" d="M-717,1044.5c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S-714.2,1044.5-717,1044.5z"/>
-<path class="st1" d="M-717,1080.5c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S-714.2,1080.5-717,1080.5z"/>
-<path class="st1" d="M-681,1044.5c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S-678.2,1044.5-681,1044.5z"/>
-<path class="st1" d="M-681,1080.5c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S-678.2,1080.5-681,1080.5z"/>
+<path class="st0" d="M-938,1409c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S-935.2,1409-938,1409z"/>
+<path class="st0" d="M-956,1391c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S-953.2,1391-956,1391z"/>
+<path class="st0" d="M-956,1427c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S-953.2,1427-956,1427z"/>
+<path class="st0" d="M-920,1391c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S-917.2,1391-920,1391z"/>
+<path class="st0" d="M-920,1427c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S-917.2,1427-920,1427z"/>
 </svg>

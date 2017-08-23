@@ -1,7 +1,5 @@
-
   position: relative;
   z-index: 1;
   background-size: $size;
   background-color: none;
-  background-image: $background-image;
 }
