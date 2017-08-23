@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
-<path fill="#FF0000" d="M12,3.535V0H8.465L0,8.465V12h3.535L12,3.535z M0,0h3.535L0,3.535V0z M8.465,12L12,8.465V12H8.465z"/>
-<text transform="matrix(1 0 0 1 0 -7.2285)" fill="#FF0000" font-family="'ArialMT'" font-size="12">lines-up-c</text>
-<polygon fill="#00FF00" points="0,8.465 8.465,0 3.535,0 0,3.535 "/>
-<polygon fill="#00FF00" points="3.535,12 12,3.535 12,8.465 8.465,12 "/>
+	 viewBox="-251 358.5 12 12" style="enable-background:new -251 358.5 12 12;" xml:space="preserve">
+<style type="text/css">
+	.st0{enable-background:new    ;}
+	.st1{fill:#FF0000;}
+</style>
+<text transform="matrix(1 0 0 1 -251 351.2715)" style="font-family:'ArialMT'; font-size:12px;">lines-up-c</text>
+<path class="st1" d="M-239,362v-3.5h-3.5l-8.5,8.5v3.5h3.5L-239,362z M-251,358.5h3.5l-3.5,3.5V358.5z M-242.5,370.5l3.5-3.5v3.5
+	H-242.5z"/>
 </svg>
