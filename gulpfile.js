@@ -30,8 +30,9 @@ gulp.src('./svg/converted/*.svg')
 
  gulp.task('replace', function(){
   gulp.src(['./svg/replaced/tile.css'])
-    .pipe(replace('fill%3Ared', 'fill%3A\" + $color + \"'))
-    .pipe(replace('fill%3D%22%23F00', 'fill%3A\" + $color + \"'))
+    // .pipe(replace('fill%3Ared', 'fill%3A\" + $color + \"'))
+    .pipe(replace('%23F00', '\" + $color + \"'))
+    .pipe(replace('data:image&#x2F;svg+xml,', 'data:image/svg+xml,'))
     .pipe(gulp.dest('./svg/replaced/'));
 });
 

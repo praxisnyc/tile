@@ -1,24 +1,72 @@
 
   @if $tile == "cross-a" {
-    background-image: url("data:image&#x2F;svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Ecross-a%3C%2Ftitle%3E%3Cpath%20d%3D%22M-1-5v4h-4v3h4v4h3.001V2H6v-3H2.001v-4H-1zm18%2018v4h-4v3h4v4h3.001v-4H24v-3h-3.999v-4H17z%22%20fill%3A" + $color + "%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Ecross-a%3C%2Ftitle%3E%3Cpath%20d%3D%22M4%200v4H0v3h4v4h3.001V7H11V4H7.001V0H4zm18%2018v4h-4v3h4v4h3.001v-4H29v-3h-3.999v-4H22z%22%20fill%3D%22" + $color + "%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");
   }
 
   @if $tile == "cross-b" {
-    background-image: url("data:image&#x2F;svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Ecross-b%3C%2Ftitle%3E%3Cpath%20d%3D%22M6%202H2v4h-4V2h-4v-4h4v-4h4v4h4v4zm18%2018h-4v4h-4v-4h-4v-4h4v-4h4v4h4v4z%22%20fill%3A" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Ecross-b%3C%2Ftitle%3E%3Cpath%20d%3D%22M12%208H8v4H4V8H0V4h4V0h4v4h4v4zm18%2018h-4v4h-4v-4h-4v-4h4v-4h4v4h4v4z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
   }
 
   @if $tile == "cross-c" {
-    background-image: url("data:image&#x2F;svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Ecross-c%3C%2Ftitle%3E%3Cpath%20d%3D%22M6%203H3v3h-6V3h-3v-6h3v-3h6v3h3v6zm18%2018h-3v3h-6v-3h-3v-6h3v-3h6v3h3v6z%22%20fill%3A" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Ecross-c%3C%2Ftitle%3E%3Cpath%20d%3D%22M12%209H9v3H3V9H0V3h3V0h6v3h3v6zm18%2018h-3v3h-6v-3h-3v-6h3v-3h6v3h3v6z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+  }
+
+  @if $tile == "dots-a" {
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Edots-a%3C%2Ftitle%3E%3Cpath%20d%3D%22M18%2023c-2.8%200-5-2.2-5-5s2.2-5%205-5%205%202.2%205%205-2.2%205-5%205zM0%205c-2.8%200-5-2.2-5-5s2.2-5%205-5%205%202.2%205%205-2.2%205-5%205zm0%2036c-2.8%200-5-2.2-5-5s2.2-5%205-5%205%202.2%205%205-2.2%205-5%205zM36%205c-2.8%200-5-2.2-5-5s2.2-5%205-5%205%202.2%205%205-2.2%205-5%205zm0%2036c-2.8%200-5-2.2-5-5s2.2-5%205-5%205%202.2%205%205-2.2%205-5%205z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+  }
+
+  @if $tile == "dots-b" {
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Edots-b%3C%2Ftitle%3E%3Cpath%20d%3D%22M18%2026c-4.4%200-8-3.6-8-8s3.6-8%208-8%208%203.6%208%208-3.6%208-8%208zM0%208c-4.4%200-8-3.6-8-8s3.6-8%208-8%208%203.6%208%208-3.6%208-8%208zm0%2036c-4.4%200-8-3.6-8-8s3.6-8%208-8%208%203.6%208%208-3.6%208-8%208zM36%208c-4.4%200-8-3.6-8-8s3.6-8%208-8%208%203.6%208%208-3.6%208-8%208zm0%2036c-4.4%200-8-3.6-8-8s3.6-8%208-8%208%203.6%208%208-3.6%208-8%208z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+  }
+
+  @if $tile == "dots-c" {
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Edots-c%3C%2Ftitle%3E%3Cpath%20d%3D%22M18%2029c-6.1%200-11-4.9-11-11S11.9%207%2018%207s11%204.9%2011%2011-4.9%2011-11%2011zM0%2011c-6.1%200-11-4.9-11-11s4.9-11%2011-11S11-6.1%2011%200%206.1%2011%200%2011zm0%2036c-6.1%200-11-4.9-11-11s4.9-11%2011-11%2011%204.9%2011%2011S6.1%2047%200%2047zm36-36c-6.1%200-11-4.9-11-11s4.9-11%2011-11S47-6.1%2047%200s-4.9%2011-11%2011zm0%2036c-6.1%200-11-4.9-11-11s4.9-11%2011-11%2011%204.9%2011%2011-4.9%2011-11%2011z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
   }
 
   @if $tile == "lines-a" {
-    background-image: url("data:image&#x2F;svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-a%3C%2Ftitle%3E%3Cpath%20d%3D%22M0%200h36v3.6H0z%22%20fill%3A" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-a%3C%2Ftitle%3E%3Cpath%20d%3D%22M0%200h36v3.6H0z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
   }
 
   @if $tile == "lines-b" {
-    background-image: url("data:image&#x2F;svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-b%3C%2Ftitle%3E%3Cpath%20d%3D%22M0%200h36v10.8H0z%22%20fill%3A" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-b%3C%2Ftitle%3E%3Cpath%20d%3D%22M0%200h36v10.8H0z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
   }
 
   @if $tile == "lines-c" {
-    background-image: url("data:image&#x2F;svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-c%3C%2Ftitle%3E%3Cpath%20d%3D%22M0%200h36v18H0z%22%20fill%3A" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-c%3C%2Ftitle%3E%3Cpath%20d%3D%22M0%200h36v18H0z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+  }
+
+  @if $tile == "lines-down-a" {
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-down-a%3C%2Ftitle%3E%3Cg%20fill%3D%22" + $color + "%22%3E%3Cpath%20d%3D%22M36.1%200H34l2.1%202.1zM0%2034v2.1h2.1z%22%2F%3E%3Cpath%20d%3D%22M0%2034v2.1h2.1zm36-.1V36h-2.1L0%202.1V0h2.1z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  }
+
+  @if $tile == "lines-down-b" {
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-down-b%3C%2Ftitle%3E%3Cpath%20d%3D%22M6.3%200H0v6.3L29.7%2036H36v-6.3L6.3%200zM36%206.3L29.7%200H36v6.3zM6.3%2036H0v-6.3L6.3%2036z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+  }
+
+  @if $tile == "lines-down-c" {
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-down-c%3C%2Ftitle%3E%3Cpath%20d%3D%22M10.5%200H0v10.5L25.5%2036H36V25.5L10.5%200zM0%2036V25.5L10.5%2036H0zm36-25.5L25.5%200H36v10.5z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+  }
+
+  @if $tile == "lines-up-a" {
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-up-a%3C%2Ftitle%3E%3Cg%20fill%3D%22" + $color + "%22%3E%3Cpath%20d%3D%22M36.1%2036H34l2.1-2.1zM0%202V-.1h2.1z%22%2F%3E%3Cpath%20d%3D%22M0%202V-.1h2.1zm36%20.1V0h-2.1L0%2033.9V36h2.1z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  }
+
+  @if $tile == "lines-up-b" {
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-up-b%3C%2Ftitle%3E%3Cpath%20d%3D%22M6.3%2036H0v-6.3L29.7%200H36v6.3L6.3%2036zM36%2029.7L29.7%2036H36v-6.3zM6.3%200H0v6.3L6.3%200z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+  }
+
+  @if $tile == "lines-up-c" {
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-up-c%3C%2Ftitle%3E%3Cpath%20d%3D%22M10.5%2036H0V25.5L25.5%200H36v10.5L10.5%2036zM0%200v10.5L10.5%200H0zm36%2025.5L25.5%2036H36V25.5z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+  }
+
+  @if $tile == "lines-vert-a" {
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-vert-a%3C%2Ftitle%3E%3Cpath%20d%3D%22M3.8-.2v36H.2v-36z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+  }
+
+  @if $tile == "lines-vert-b" {
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-vert-b%3C%2Ftitle%3E%3Cpath%20d%3D%22M10.4.4v36H-.4V.4z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
+  }
+
+  @if $tile == "lines-vert-c" {
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2236%22%20height%3D%2236%22%20viewBox%3D%220%200%2036%2036%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Elines-vert-c%3C%2Ftitle%3E%3Cpath%20d%3D%22M18%200v36H0V0z%22%20fill%3D%22" + $color + "%22%2F%3E%3C%2Fsvg%3E");
   }

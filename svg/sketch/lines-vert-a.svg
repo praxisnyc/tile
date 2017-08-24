@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
-    <title>cross-a</title>
+    <title>lines-vert-a</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="cross-a" fill="#FF0000">
-            <path d="M4,0 L4,4 L0,4 L0,7 L4,7 L4,11 L7.001,11 L7.001,7 L11,7 L11,4 L7.001,4 L7.001,0 L4,0 Z M22,18 L22,22 L18,22 L18,25 L22,25 L22,29 L25.001,29 L25.001,25 L29,25 L29,22 L25.001,22 L25.001,18 L22,18 Z"></path>
+        <g id="lines-vert-a" fill-rule="nonzero" fill="#FF0000">
+            <rect id="Rectangle-path" transform="translate(2.000000, 17.800000) rotate(90.000000) translate(-2.000000, -17.800000) " x="-16" y="16" width="36" height="3.6"></rect>
         </g>
     </g>
 </svg>
