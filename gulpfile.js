@@ -13,7 +13,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('svg', function () {
-    return gulp.src('./svg/illustrator/*.svg')
+    return gulp.src('./svg/sketch/*.svg')
         .pipe(svgmin())
         .pipe(gulp.dest('./svg/converted'));
 });
@@ -31,6 +31,7 @@ gulp.src('./svg/converted/*.svg')
  gulp.task('replace', function(){
   gulp.src(['./svg/replaced/tile.css'])
     .pipe(replace('fill%3Ared', 'fill%3A\" + $color + \"'))
+    .pipe(replace('fill%3D%22%23F00', 'fill%3A\" + $color + \"'))
     .pipe(gulp.dest('./svg/replaced/'));
 });
 
@@ -42,47 +43,31 @@ gulp.src('./svg/converted/*.svg')
 
 
 
-// gulp.task('replace', function(){
-//   gulp.src(['./svg/converted/*.svg'])
-//     .pipe(replace(' xmlns="http://www.w3.org/2000/svg"', ''))
-//     .pipe(replace(' id="Layer_1"', ''))
-//     .pipe(replace(' viewBox="-251 358.5 36 36"', ''))
-//     .pipe(replace(' viewBox="-239 346.5 36 36"', ''))
-//     .pipe(replace('.st0{enable-background:new}', ''))
-//     .pipe(replace('.st1{fill:red}', ''))
-//     .pipe(replace('<style>', ''))
-//     .pipe(replace('</style>', ''))
-//     .pipe(replace(' font-size="12"', ''))
-//     .pipe(replace(' font-family="ArialMT"', ''))
-//     .pipe(replace(' viewBox="-252 359.5 10 10"', ''))
-//     .pipe(replace(' transform="translate(-251 351.272)"', ''))
-//     .pipe(replace(' viewBox="-251 358.5 12 12"', ''))
-//     .pipe(replace('.st1{enable-background:new}', ''))
-//     .pipe(replace('.st0{fill:red}', ''))
-//     .pipe(replace(' transform="translate(-239 339.272)"', ''))
-//     .pipe(replace(' transform="translate(-478 685.771)"', ''))
-//     .pipe(replace(' transform="translate(-717 1032.272)"', ''))
-//     .pipe(replace(' transform="translate(-252 352.272)"', ''))
-//     .pipe(replace(' transform="translate(-502 709.771)"', ''))
-//     .pipe(replace('class="st1"', 'class="#{$color}"'))
-//     .pipe(replace('class="st0"', 'class="#{$color}"'))
-//     .pipe(replace('<', '%3C'))
-//     .pipe(replace('>', '%3E'))
-//     .pipe(replace(' ', '%20'))
-//     .pipe(replace('=', '%3D'))
-//     .pipe(replace('"', '%27'))
-//     .pipe(replace('-', '%2C'))
-//     .pipe(replace('%3C/svg%3E', '%3C?/svg%3E\'\)\;\n\}'))
-//     .pipe(replace('%3Csvg%3E%3Ctext%3E', '\n@if $tile == \''))
-//     .pipe(replace('%3C/text%3E', '\' {\nbackground-image: url(\'data:image/svg+xml,%3Csvg%3E'))
-//         .pipe(replace('%2Ca\' {', '-a\' {'))
-//     .pipe(replace('%2Cb\' {', '-b\' {'))
-//     .pipe(replace('%2Cc\' {', '-c\' {'))
-//             .pipe(replace('%2Cdown', '-down'))
-//     .pipe(replace('%2Cup', '-up'))
-//     .pipe(replace('%2Cvert', '-vert'))
-//     .pipe(gulp.dest('./svg/replaced/'));
-// });
+gulp.task('svgtobg', function(){
+  gulp.src(['./original/test.scss'])
+    .pipe(replace('<', '%3C'))
+    .pipe(replace('>', '%3E'))
+    .pipe(replace(' ', '%20'))
+    .pipe(replace('=', '%3D'))
+    .pipe(replace('"', '%27'))
+    .pipe(replace('-', '%2C'))
+    .pipe(replace('\'', '%22'))
+    .pipe(replace('\n', '%0A'))
+    .pipe(gulp.dest('./original/'));
+});
+
+gulp.task('bgtosvg', function(){
+  gulp.src(['./original/test.scss'])
+    .pipe(replace('%3C', '<'))
+    .pipe(replace('%3E', '>'))
+    .pipe(replace('%20', ' '))
+    .pipe(replace('%3D', '='))
+    .pipe(replace('%27', '"'))
+    .pipe(replace('%2C', '-'))
+    .pipe(replace('%22', '\''))
+    .pipe(replace('%0A', '\n'))
+    .pipe(gulp.dest('./original/'));
+});
 
 // gulp.task('make', function() {
 //   return gulp.src(['./svg/replaced/aaa.txt', './svg/replaced/*.svg', './svg/replaced/zzz.txt'])
