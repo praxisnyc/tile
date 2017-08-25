@@ -1,0 +1,29 @@
+<svg width="36" height="36" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>dots-c</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-120 -120)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 120 120L 156 120L 156 156L 120 156L 120 120Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="dots-c" clip-path="url(#clip-0)">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(127 127)" fill="#FF0000"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(109 109)" fill="#FF0000"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(109 145)" fill="#FF0000"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(145 109)" fill="#FF0000"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(145 145)" fill="#FF0000"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 11 22C 4.9 22 0 17.1 0 11C 0 4.9 4.9 0 11 0C 17.1 0 22 4.9 22 11C 22 17.1 17.1 22 11 22Z"/>
+</defs>
+</svg>

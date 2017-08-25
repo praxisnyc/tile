@@ -1,0 +1,19 @@
+<svg width="36" height="36" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>cross-c</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-120 0)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 120 0L 156 0L 156 36L 120 36L 120 0Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="cross-c" clip-path="url(#clip-0)">
+<g id="cross-c">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(120 0)" fill="#FF0000"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 9 9L 12 9L 12 3L 9 3L 9 0L 3 0L 3 3L 0 3L 0 9L 3 9L 3 12L 9 12L 9 9ZM 27 27L 30 27L 30 21L 27 21L 27 18L 21 18L 21 21L 18 21L 18 27L 21 27L 21 30L 27 30L 27 27Z"/>
+</defs>
+</svg>

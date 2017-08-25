@@ -1,0 +1,17 @@
+<svg width="36" height="36" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>lines-up-b</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-60 -240)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 60 240L 96 240L 96 276L 60 276L 60 240Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="lines-up-b" clip-path="url(#clip-0)">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="matrix(1 0 0 -1 60 276)" fill="#FF0000"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 6.3 0L 0 0L 0 6.29999L 29.7 36L 36 36L 36 29.7L 6.3 0ZM 36 6.29999L 29.7 0L 36 0L 36 6.29999ZM 0 36L 6.3 36L 0 29.7L 0 36Z"/>
+</defs>
+</svg>

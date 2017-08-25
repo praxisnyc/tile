@@ -1,0 +1,17 @@
+<svg width="36" height="36" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>lines-down-c</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-120 -180)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 120 180L 156 180L 156 216L 120 216L 120 180Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="lines-down-c" clip-path="url(#clip-0)">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(120 180)" fill="#FF0000"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 10.5 0L 0 0L 0 10.5L 25.5 36L 36 36L 36 25.5L 10.5 0ZM 0 36L 0 25.5L 10.5 36L 0 36ZM 25.5 0L 36 10.5L 36 0L 25.5 0Z"/>
+</defs>
+</svg>
