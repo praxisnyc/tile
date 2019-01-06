@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "tile",
   "version": "0.1.0",
-  "description": "",
+  "description": "- [check requirements](https://github.com/nonlinear/tile/wiki/requirements) - [follow installation](https://github.com/nonlinear/tile/wiki/installation) - [visit page](https://nonlinear.github.io/tile)",
   "main": "gulpfile.js",
   "author": "",
   "license": "ISC",
@@ -18,5 +18,16 @@
     "i": "^0.3.6",
     "npm": "^6.1.0",
     "run-sequence": "^2.1.0"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praxisnyc/tile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/praxisnyc/tile/issues"
+  },
+  "homepage": "https://github.com/praxisnyc/tile#readme"
 }
